@@ -1,101 +1,91 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Arefe Abdolahi – Resume</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
-			<header id="header" class="alt">
-				<h1><a href="index.html">Arefe Abdolahi</a></h1>
-				<nav><a href="#menu">Menu</a></nav>
-			</header>
-
-			<nav id="menu">
-				<div class="inner">
-					<h2>Menu</h2>
-					<ul class="links">
-						<li><a href="#">Home</a></li>
-						<li><a href="#summary">Summary</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#experience">Experience</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-					<a href="#" class="close">Close</a>
-				</div>
-			</nav>
-
-			<section id="banner">
-				<div class="inner">
-					<div class="logo"><span class="icon fa-gem"></span></div>
-					<h2>Arefe Abdolahi</h2>
-					<p>Strategic Content Marketer | Brand Storyteller | Social Media Specialist</p>
-				</div>
-			</section>
-
-			<section id="wrapper">
-				<section id="summary" class="wrapper spotlight style1">
-					<div class="inner">
-						<div class="content">
-							<h2 class="major">Professional Summary</h2>
-							<p>I am a strategic content marketer and social media manager focused on human-centered growth and storytelling that builds trust and engagement. With a background in cultural and mission-driven projects, I create content systems and campaigns that resonate and perform.</p>
-						</div>
-					</div>
-				</section>
-
-				<section id="skills" class="wrapper alt spotlight style2">
-					<div class="inner">
-						<div class="content">
-							<h2 class="major">Skills</h2>
-							<ul>
-								<li>Digital Campaign Management</li>
-								<li>Social Media Strategy & Marketing</li>
-								<li>Storytelling & Brand Voice</li>
-								<li>Performance Analysis</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<section id="experience" class="wrapper spotlight style3">
-					<div class="inner">
-						<div class="content">
-							<h2 class="major">Experience</h2>
-							<h3>Freelance – Social Media Manager</h3>
-							<p><strong>Jan 2024 – Present</strong><br>Managing strategies and content for brands with meaningful missions.</p>
-							<h3>Raze Negahe Aftabgardan – Digital Marketing Expert</h3>
-							<p><strong>June 2022 – Feb 2024</strong><br>Led data-driven content strategies for cultural and social initiatives.</p>
-							<h3>M.IT Group – Sales Specialist</h3>
-							<p><strong>June 2022 – July 2022</strong><br>Focused on relationship-based sales initiatives.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-
-			<section id="footer">
-				<div class="inner">
-					<h2 class="major">Get in touch</h2>
-					<ul class="contact">
-						<li class="icon solid fa-home">Tehran, Iran</li>
-						<li class="icon solid fa-envelope"><a href="mailto:Arefeseyedabdolahi@gmail.com">mariarad78914@gmail.com</a></li>
-						<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/arefe-abdolahi-10091b23b">LinkedIn</a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Arefe Abdolahi</li>
-						<li>Design: HTML5 UP (Customized)</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let’s Connect | Arefe SeyedAbdolahi</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #241b2f;
+      color: #e0d7d0;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #f4e8dd;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+    .contact-info {
+      font-size: 1.1em;
+      line-height: 2em;
+    }
+    a {
+      color: #c8b7a6;
+      text-decoration: underline;
+    }
+    .divider {
+      height: 1px;
+      background-color: #c8b7a6;
+      margin-bottom: 40px;
+    }
+    .dots {
+      position: absolute;
+      top: 40px;
+      right: 50px;
+      display: flex;
+      gap: 10px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: #e0d7d0;
+      border-radius: 50%;
+    }
+    .background-circle {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 400px;
+      height: 400px;
+      background-color: #1f1529;
+      border-radius: 50%;
+      z-index: 0;
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <div class="background-circle"></div>
+  <div class="container">
+    <div class="divider"></div>
+    <h1>Let’s Connect!</h1>
+    <p>Thank you for taking the time to review my portfolio.</p>
+    <p>If you’re looking for someone who can create viral content, shape powerful brand stories, and bring results to your digital media presence — I’d love to hear from you.</p>
+    <p>Let’s build something amazing together.</p>
+    <div class="contact-info">
+      <p>📧 Contact: <a href="mailto:Arefeseyedabdolahi@gmail.com">Arefeseyedabdolahi@gmail.com</a></p>
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/arefe-abdolahi-10091b23b">arefe-abdolahi-10091b23b</a></p>
+      <p>📱 09352772378</p>
+    </div>
+  </div>
+</body>
 </html>
