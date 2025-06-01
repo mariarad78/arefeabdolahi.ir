@@ -11,12 +11,18 @@
       font-family: 'Libre Baskerville', serif;
       background-color: #241b2f;
       color: #e0d7d0;
+      scroll-behavior: smooth;
     }
     section {
       padding: 80px 20px;
       max-width: 1100px;
       margin: auto;
       position: relative;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
     h1, h2, h3 {
       color: #f4e8dd;
@@ -37,14 +43,20 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      gap: 20px;
     }
     .intro-text {
-      max-width: 60%;
+      flex: 1;
+      min-width: 260px;
     }
     .intro img {
       max-width: 250px;
       border-radius: 50%;
       border: 4px solid #f4e8dd;
+      transition: transform 0.3s ease;
+    }
+    .intro img:hover {
+      transform: scale(1.05);
     }
     ul {
       padding-left: 1.5em;
@@ -54,15 +66,18 @@
       border: 1px solid #c8b7a6;
       padding: 20px;
       margin-top: 40px;
+      border-radius: 12px;
     }
     .timeline {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       border-bottom: 1px solid #c8b7a6;
       padding-bottom: 40px;
+      gap: 20px;
     }
     .timeline-entry {
-      flex: 1;
+      flex: 1 1 30%;
       text-align: center;
     }
     .certs {
@@ -73,6 +88,7 @@
     }
     .certs img {
       max-width: 300px;
+      border-radius: 8px;
     }
     .certs-text {
       flex: 1;
@@ -87,6 +103,11 @@
     .top-content img {
       max-width: 180px;
       border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .top-content img:hover {
+      transform: scale(1.05);
     }
     footer {
       text-align: center;
@@ -94,6 +115,25 @@
     }
     a {
       color: #c8b7a6;
+    }
+    @media (max-width: 768px) {
+      .intro {
+        flex-direction: column;
+        text-align: center;
+      }
+      .timeline-entry {
+        flex: 1 1 100%;
+      }
+      .certs {
+        flex-direction: column;
+        align-items: center;
+      }
+      .certs img {
+        width: 90%;
+      }
+      .top-content img {
+        max-width: 45%;
+      }
     }
   </style>
 </head>
@@ -104,7 +144,7 @@
       <p><em>Strategic Content Marketer | Brand Storyteller | Social Media Specialist</em></p>
       <p><strong>Website:</strong> <a href="https://arefeabdolahi.ir">arefeabdolahi.ir</a></p>
     </div>
-    <img src="images/profile1.jpg" alt="Arefe SeyedAbdolahi">
+    <img src="images/profile1.jpg.jpg" alt="Arefe SeyedAbdolahi">
   </section>
 
   <section>
@@ -148,9 +188,9 @@
   <section>
     <h2>Education & Certifications</h2>
     <div class="certs">
-      <img src="images/cert1.jpg" alt="Certificate 1">
-      <img src="images/cert2.jpg" alt="Certificate 2">
-      <img src="images/cert3.jpg" alt="Certificate 3">
+      <img src="images/cert1.jpg.JPG" alt="Certificate 1">
+      <img src="images/cert2.jpg.JPG" alt="Certificate 2">
+      <img src="images/cert3.jpg.JPG" alt="Certificate 3">
       <div class="certs-text">
         <ul>
           <li><strong>High School Diploma</strong> – Mathematics & Physics – Ministry of Education, Iran (2012)</li>
@@ -166,11 +206,11 @@
     <h2>Top Performing Content</h2>
     <p>Page growth results from strategic content:</p>
     <div class="top-content">
-      <img src="images/stats1.jpg" alt="stats1">
-      <img src="images/stats2.jpg" alt="stats2">
-      <img src="images/stats3.jpg" alt="stats3">
-      <img src="images/stats4.jpg" alt="stats4">
-      <img src="images/stats5.jpg" alt="stats5">
+      <img src="images/stats1.jpg.PNG" alt="stats1">
+      <img src="images/stats2.jpg.PNG" alt="stats2">
+      <img src="images/stats3.jpg.PNG" alt="stats3">
+      <img src="images/stats4.jpg.PNG" alt="stats4">
+      <img src="images/stats5.jpg.PNG" alt="stats5">
     </div>
   </section>
 
